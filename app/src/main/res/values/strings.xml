@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Posts</string>
+    <string name="all_tab">All</string>
+    <string name="favorites_tab">Favorites</string>
+    <string name="delete_all">Delete All</string>
+    <string name="name_title">Name:</string>
+    <string name="email_title">Email:</string>
+    <string name="phone_title">Phone:</string>
+    <string name="website_title">Website:</string>
+    <string name="user">User</string>
+    <string name="description">Description</string>
+    <string name="comments">Comments</string>
+    <string name="refresh">Refresh</string>
+    <string name="favorite">Favorite</string>
+</resources>

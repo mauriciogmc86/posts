@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image_button_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_5"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_post_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_post_title"
+            app:srcCompat="@drawable/ic_brightness"
+            app:tint="@color/blue_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_post_title"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginStart="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_5"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/image_button_icon"
+            app:layout_constraintStart_toEndOf="@+id/image_button_read"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="dolorem quibusdam ducimus consequuntur dicta aut quo laboriosam\nvoluptatem quis enim recusandae " />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_button_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_5"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_post_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_post_title"
+            app:srcCompat="@drawable/ic_arrow_forward" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/grey_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_post_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
